@@ -42,7 +42,7 @@ const loginAdmin = async (req, res) => {
 // ADD NEW ADMIN
 const addNewAdmin = async (req, res) => {
     const { email, password, role, name, sex, age, contact, adminEmail } = await req.body
-
+    console.log("first")
     try {
         const match = await Admin.findOne({ email })
 

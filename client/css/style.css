@@ -10,7 +10,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: sans-serif;
   font-weight: 400;
 }
@@ -230,7 +231,8 @@ h1 {
 
 /*--------book---------*/
 /*--------about---------*/
-.left, .right {
+.left,
+.right {
   width: 50%;
   padding: 30px;
 }
@@ -722,7 +724,8 @@ footer label {
     height: 50vh;
   }
 
-  .left, .right {
+  .left,
+  .right {
     width: 100%;
   }
 
