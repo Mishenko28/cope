@@ -399,17 +399,6 @@ h1 {
   transition: 0.5s;
 }
 
-.overlay {
-  position: absolute;
-  top: 35%;
-  left: 25%;
-  z-index: 3;
-  text-align: center;
-  color: white;
-  opacity: 0;
-  transition: 0.5s;
-}
-
 .gallery span {
   width: 50px;
   height: 50px;
@@ -420,14 +409,9 @@ h1 {
 }
 
 .overlay h3 {
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 500;
-}
-
-.gallery .items:hover .overlay,
-.gallery .items:hover .img::after {
-  opacity: 1;
-  cursor: pointer;
+  text-align: center;
 }
 
 .gallery .owl-nav .owl-prev {
@@ -710,6 +694,49 @@ footer label {
   background: #282834;
   color: #b6b7b9;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.room-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.room-cont .items {
+  width: 30%;
+}
+
+.room-cont img {
+  height: 200px;
+  width: 100%;
+}
+
+.room-cont p {
+  word-break: break-all;
+}
+
+.gallery-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-cont img {
+  width: 400px;
+  height: 200px;
+}
+
+footer img {
+  width: 50px
 }
 
 /*--------footer---------*/

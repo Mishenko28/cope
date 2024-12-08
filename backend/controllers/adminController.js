@@ -7,7 +7,7 @@ const validator = require('validator')
 const jwt = require('jsonwebtoken')
 
 const createToken = (id) => {
-    return jwt.sign({ id }, "LagoonThesis", { expiresIn: '1d' })
+    return jwt.sign({ id }, process.env.PASSWORD, { expiresIn: '1d' })
 }
 
 
@@ -42,7 +42,6 @@ const loginAdmin = async (req, res) => {
 // ADD NEW ADMIN
 const addNewAdmin = async (req, res) => {
     const { email, password, role, name, sex, age, contact, adminEmail } = await req.body
-    console.log("first")
     try {
         const match = await Admin.findOne({ email })
 

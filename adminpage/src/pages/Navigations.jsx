@@ -48,7 +48,7 @@ export default function Navigations() {
     return (
         <div className='main-cont'>
             <div className="header-cont">
-                <h1>The Lagoon Resort Finland Inc.</h1>
+                <h1>AM De Perio's Place</h1>
                 <div className='profile-cont'>
                     <img src="https://www.w3schools.com/howto/img_avatar.png" alt="profile-pic" />
                     <h3>{state.admin.email}</h3>
@@ -93,10 +93,6 @@ export default function Navigations() {
                 <div className="content-cont">
                     {openSettings &&
                         <div ref={settingsRef} className='settings-cont'>
-                            <button>Button1</button>
-                            <button>Button2</button>
-                            <button>Button3</button>
-                            <button>Button4</button>
                             <button onClick={handleLogout}>Logout<i className="fa-solid fa-right-from-bracket" /></button>
                         </div>
                     }

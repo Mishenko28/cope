@@ -37,8 +37,6 @@ export function AdminContextProvider({ children }) {
         const admin = localStorage.getItem('lagoonAdmin')
         admin && dispatch({ type: "LOGIN", payload: JSON.parse(admin) })
         axios.defaults.baseURL = "http://localhost:8000"
-        // "https://the-lagoon-resort-finland-inc-api.onrender.com" for production
-        // "http://localhost:8000" for development
 
         axios.defaults.headers.common['Content-Type'] = 'application/json'
         if (admin) {
