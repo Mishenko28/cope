@@ -728,6 +728,7 @@ footer label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .gallery-cont img {
